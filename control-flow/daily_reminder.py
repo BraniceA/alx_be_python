@@ -1,8 +1,8 @@
 # Personal Daily Reminder
 task = input("Enter your task:")
-priority_level = input("Priority (high/medium/low):").lower()
+priority = input("Priority (high/medium/low):").lower()
 time_sensitivity = input("Is it time-bound? (yes/no):").lower()
-match priority_level:
+match priority:
     case "high": 
         print(f"Reminder: {task} is a high priority task!", end=" ")
     case "medium":
